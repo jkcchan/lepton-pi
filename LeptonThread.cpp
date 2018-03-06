@@ -105,7 +105,7 @@ void LeptonThread::run() {
 
             ++iRow;
         }
-
+	qDebug() << resets;
         if (iRow < FrameHeight) {
             if (++resets >= 750) {
                 qDebug() << "Packet reset counter hit 750";
